@@ -1,0 +1,17 @@
+#main {
+  background-color: #1965C2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table {
+  border-style: solid;
+  border-color: black;
+  border-collapse: collapse;
+}
+th, td {
+  border-style: solid;
+  border-color: black;
+  margin: 0;
+}

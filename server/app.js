@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const sort = require('./helpers.js');
+const sort = require('./../client/helpers/sort.js').sort;
 const PORT = 3000;
 const path = require('path');
 
@@ -15,10 +15,13 @@ app.use('/', express.static(path.join(__dirname, '../client')));
 // })
 
 app.post('/sort', (req, res) => {
-  let term = req.body.inputToSort;
+  let term = req.body.input;
   let sorted = sort(term);
   
-  res.send({sorted: sorted});
+  res.send({
+    input: term,
+    sorted: sorted
+  });
 });
 
 app.listen(PORT, () => {
