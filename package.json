@@ -1,0 +1,26 @@
+{
+  "name": "sortinator-2",
+  "version": "1.0.0",
+  "description": "sortinator-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnylau/sortinator-2.git"
+  },
+  "author": "jon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonnylau/sortinator-2/issues"
+  },
+  "homepage": "https://github.com/jonnylau/sortinator-2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1",
+    "node": "^9.4.0"
+  }
+}
